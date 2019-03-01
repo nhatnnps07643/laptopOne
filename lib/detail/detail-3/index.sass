@@ -1,0 +1,48 @@
+@import ../../_includes
+
+// CSS DETAIL 3
+.detail_3
+	.item
+		overflow: hidden
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			width: 99%
+			height: 2px
+			left: 0
+			bottom: -20px
+			display: block
+			background: $_main2
+		&:hover
+			&::after
+				bottom: 0px
+		.box_img_product
+			padding: 1rem
+			img
+				object-fit: cover
+				cursor: pointer
+		figcaption
+			strong
+				width: 100%
+				display: block
+				color: $_text
+				padding: .3rem 0rem
+				border-radius: 2px
+			p
+				text-overflow: ellipsis
+				overflow: hidden
+				white-space: nowrap
+				// margin: 0
+		.infomation_more
+			z-index: 100
+			position: absolute
+			height: auto
+			top: 10%
+			display: inline-block
+			right: 100%
+			transition: .2s ease-in-out
+			box-shadow: 0px 0px 
+		&:hover
+			.infomation_more
+				right: 0%

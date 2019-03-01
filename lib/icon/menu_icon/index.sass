@@ -1,0 +1,26 @@
+@import ../../_includes
+
+#logo_header
+	width: 35px
+	height: 30px
+	padding: 5px
+	margin-left: 1rem
+	cursor: pointer
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	.item_logo
+		height: 3px
+		background: #ffffff
+		padding: 0
+		transition: all .2s ease-in-out
+		border-radius: 15px
+		&.item_logo_1
+			width: 100%
+		&.item_logo_2
+			width: 60%
+	&:hover
+		.item_logo_1
+			width: 70%
+		.item_logo_2
+			width: 100%

@@ -1,0 +1,13 @@
+extends _layout/layout.pug
+block variables
+	- var title = "Login"
+	- var description = "User can login here"
+	- var bodyclass = "Login"
+	- var href = "/login.html"
+block header
+	include ../lib/header/header-1/index.pug
+block body
+	main
+		include ../lib/login/login-1/index.pug
+block footer
+	include ../lib/footer/f-11/index.pug

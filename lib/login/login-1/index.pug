@@ -1,0 +1,41 @@
+//- HTML LOGIN
+-
+	var social = [
+	{
+		image: '001-github-character.svg',
+		name: '',
+	},
+	{
+		image: '002-google-plus.svg',
+		name: '',
+	},
+	{
+		image: '003-facebook.svg',
+		name: '',
+	},
+	{
+		image: '004-twitter.svg',
+		name: '',
+	},
+	]
+section.login-01
+	.container
+		.row.no-gutters.login_main
+			.col-md-7
+			.col-md-4
+				form(action="").w-100.animated.bounceInDown
+					.group_custom_login
+						i.fa.fa-envelope
+						input(type="text" placeholder='Email')
+					.group_custom_login
+						i.fa.fa-unlock-alt
+						input(type="password" placeholder='Password')
+					.group_checkbox.mt-3
+						input.mr-3(type="checkbox" id='checkregister' )
+						label(for="checkregister").mb-0.mr-3 Duy trì đăng nhập
+					.box_button
+						button(type='submit').btn.btn_hover.mt-3 Đăng nhập
+					.group_custom_login.mt-3.text-align-center
+						span Chưa có tài khoản ? 
+						br
+						a(href="") Đăng ký tại đây

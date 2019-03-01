@@ -1,0 +1,76 @@
+<!-- ////////////// HEADER ////////////// -->
+section.nav_bar_header.mt-3
+	.container
+		.row.no-gutters
+			.col-md-4.col-lg-3.col-xl-3
+				a.navbar-brand(href="#") LAPTOP
+					span ONE
+			.col-md-3.col-lg-5.col-xl-6
+				form.mt-2(action="" method="")
+					.input-group.mb-3.group_input_custom
+						input.form_custom(type='text', placeholder="Search Laptop Here...", aria-label="Recipient's username", aria-describedby='basic-addon2')
+						.input-group-append
+						button.btn(type='button') Button
+				p.suggest
+					span.h7 Gợi ý từ khóa:  
+					i Laptop hiệu dell, Laptop core i7, Laptop có card rời 
+			.col-md-5.col-lg-4.col-xl-3
+				.group_button_header.mt-2
+					.item
+						span.icon_cart
+							i.fa.fa-shopping-bag
+						a(href="")
+							span.text_cart Giỏ hàng
+					.item
+						span.icon_cart
+							i.fa.fa-comment-o
+						a(href="")
+							span.text_cart Tra cứu
+
+//- HTML MENU DANH MỤC
+section.nav_bar_menu
+	.container
+		.row.no-gutters
+			.col-md-12.col-lg-3
+				.d-flex.justyfi-content-center.box_menu_header_bottom
+					include ../../icon/menu_icon/index.pug
+					p.mb-0.ml-2 Danh mục sản phẩm
+					ul.nav_menu#menu_parent
+						li
+							img(src="./img/SVG/001-cpu.svg", alt="")
+							a(href="") CPU / Xử lí
+							.sub_menu
+								.sub_menu_child
+									ul
+										li
+											a(href="")
+						li
+							img(src="./img/SVG/002-ram.svg", alt="")
+							a(href="") Ram / Bộ nhớ 
+						li
+							img(src="./img/SVG/003-hard-disk.svg", alt="")
+							a(href="") Stroge / Lưu trữ
+						li
+							img(src="./img/SVG/005-website.svg", alt="")
+							a(href="") Monitor / Màn hình
+						li
+							img(src="./img/SVG/004-cooler.svg", alt="")
+							a(href="") Brand / Thương hiệu
+						li
+							img(src="./img/SVG/004-cooler.svg", alt="")
+							a(href="") Brand / Thương hiệu
+						li
+							img(src="./img/SVG/004-cooler.svg", alt="")
+							a(href="") Brand / Thương hiệu
+			.col-md-12.col-lg-9
+				ul.nav_bottom.m-0
+					li
+						a(href="") Trang chủ
+					li
+						a(href="") Khuyến mãi
+					li
+						a(href="") Tin tức
+					li
+						a(href="") Liên hệ
+					li
+						a(href="") Hướng dẩn mua hàng

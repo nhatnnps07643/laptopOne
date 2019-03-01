@@ -1,0 +1,30 @@
+#modal-1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title Thông tin cấu hình
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					span(aria-hidden='true') ×
+			.modal-body
+				.infomation.d-flex
+					table
+						tr
+							td Màn hình
+							td 15.6 FHD
+						tr
+							td CPU
+							td i5
+						tr
+							td SSD
+							td Không
+						tr
+							td HDD
+							td 120G
+						tr
+							td RAM
+							td 12G
+					figure#img_modal
+						
+			.modal-footer
+				button.btn.btn-close(type='button', data-dismiss='modal') Đóng
+				button.btn.btn_save(type='button') Thêm vào giỏ hàng

@@ -1,0 +1,115 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+// CSS phần DANH MỤC
+.bg-white
+	background: white
+.detail_product
+	margin-bottom: 2rem
+	.item 
+		.box_img_product
+	.detail_product_list
+		.owl-dots
+			display: flex
+			justify-content: center
+			button
+				width: 70px
+				height: 50px
+				margin: 0.5rem 1rem
+				padding: .5rem !important
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+	.box-left
+		p.name
+			font-size: 1.3rem
+			font-weight: 300
+			color: #000
+		strong.price
+			font-weight: 400
+			font-size: 1.5rem
+			color: $_button2
+		.group_number
+			display: flex
+			align-items: center
+			input
+				display: inline-block
+				width: 50px
+				height: 30px
+				text-align: center
+				background: lightblue
+				border: none
+			input[type=number]::-webkit-inner-spin-button 
+				-webkit-appearance: none
+			i
+				width: 30px
+				height: 30px
+				line-height: 30px
+				text-align: center
+				display: inline-block
+				background: $_button
+				transition: all .3s ease-in-out
+				cursor: pointer
+				&:hover
+					box-shadow: 2px 2px 10px rgba(darken($_button,30%),.4)
+					transform: translateY(-3px)
+		button
+			border: none
+			background: $_button
+			border: 2px 
+			padding: .5rem 1rem
+			border-radius: 2px
+			cursor: pointer
+
+	.box-right
+		h6
+			background: $_bg
+			padding: .5rem 1rem
+		border-left: 1px solid $_bg
+		padding-left: 1rem
+		figure
+			display: flex
+			align-items: flex-start
+			img
+				width: 30px
+				height: 30px
+				object-fit: cover
+				margin: .5rem 1rem
+			figcaption
+				p
+					margin-bottom: 0
+					font-weight: 500
+					font-size: 1.1rem
+	.btn_buy
+		
+		text-align: center
+		a
+			display: inline-block
+			padding: 1rem 2rem
+			background: royalblue
+			border: none
+			border-radius: 2px
+			color: white
+			p
+				margin-bottom: 0
+				text-transform: uppercase
+				font-weight: 600
+			span
+	.gift
+		p
+			padding-left: 2rem
+			position: relative
+			margin-bottom: .6rem
+			&::after
+				content: ''
+				display: block
+				width: 14px
+				height: 14px
+				position: absolute
+				left: 0%
+				top: 50%
+				background-image: url('../img/svg/003-rating.svg')
+				transform: translateY(-50%)
+		

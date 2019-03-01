@@ -1,0 +1,41 @@
+//- HTML LOGIN
+
+section.login-01
+	.container
+		.row.no-gutters.login_main
+			.col-md-7
+			.col-md-4
+				form(action="").w-100
+					.group_custom_login
+						i.fa.fa-envelope
+						input(type="text" placeholder='Email')
+					.group_custom_login
+						i.fa.fa-unlock-alt
+						input(type="password" placeholder='Password')
+					.group_custom_login
+						i.fa.fa-unlock-alt
+						input(type="password" placeholder='Confirm Password')
+					.group_custom_login
+						i.fa.fa-unlock-alt
+						input(type="text" placeholder='Số điện thoại')
+					.group_custom_login
+						i.fa.fa-unlock-alt
+						input(type="password" placeholder='Địa chỉ')
+					.group_checkbox.mt-3
+						input.mr-3(type="checkbox" id='checkregister' )
+						label(for="checkregister").mb-0.mr-3 Tôi đồng ý với điều khoản
+					.box_button
+						button(type='submit').btn.btn_hover.mt-3 Đăng ký
+					.group_custom_login.mt-3.text-align-center
+						span Bạn đã có tài khoản 
+						br
+						a(href="") Đăng nhập tại đây
+				
+		
+
+				//- .row.group_button_social
+				//- 	each item in social
+				//- 		.col-md-3
+				//- 			.item
+				//- 				img(src="./img/svg/"+ item.image, alt="")
+				//- 				span=item.name

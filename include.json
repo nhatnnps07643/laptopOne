@@ -1,0 +1,62 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "icon/menu_icon",
+                "header/header-1"
+            ],
+            "body": [
+                "menu/menu-1",
+                "banner/banner-1",
+                "home/home-1",
+                "home/home-2",
+                "seo/seo-1",
+                "home/home-3",
+                "hover/hover-1",
+                "modal/modal-1"
+                
+            ],
+            "footer": [
+                "footer/f-11"
+            ]
+        },
+        "about": {
+            "body": [
+                "boxes/b-1",
+                "icon/icon_menu",
+                "boxes/b-12",
+                "boxes/b-14",
+                "boxes/b-17"
+            ]
+        },
+        "detail": {
+            "body": [
+                "breadcrumb/breadcrumb-1",
+                "detail/detail-1",
+                "detail/detail-2",
+                "detail/detail-3",
+                "modal/modal-2",
+                "modal/modal-3"
+            ]
+        },
+        "cart": {
+            "body": [
+                "breadcrumb/breadcrumb-1",
+                "cart/cart-1",
+                "modal/modal-3",
+                "modal/modal-4",
+                "modal/modal-5"
+            ]
+        },
+        "login": {
+            "body": [
+                "login/login-1"
+            ]
+        },
+        "register": {
+            "body": [
+                "register/register-1"
+            ]
+        }
+    }
+}

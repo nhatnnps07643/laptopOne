@@ -1,0 +1,47 @@
+//- HTML deltail 3 
+-
+	var products = [
+	{
+		name: 'Asus gaming 424UY Chip i5 ram 4G HDD 320G',
+		price: '7,000,000 vnđ',
+		image: 'pro1.png',
+	},
+	{
+		name: 'Dell 577485',
+		price: '12,899,000 vnđ',
+		image: 'pro2.png',
+	},
+	{
+		name: 'HP Supper',
+		price: '25,899,000 vnđ',
+		image: 'pro3.png',
+	},
+	{
+		name: 'HP Supper',
+		price: '25,899,000 vnđ',
+		image: 'pro3.png',
+	},
+	{
+		name: 'MSI noteBook U87263',
+		price: '32,899,000 vnđ',
+		image: 'pro7.png',
+	}]
+
+section.detail_3.mt-3
+	.container
+		.row.no-gutters.bg-white
+			.col-12
+				.bg_title.d-flex
+					span.title_home Sản phẩm tương tự
+			.col-12
+				.owl-carousel.owl-theme.product-list
+					each item in products
+						.item.animated.bounceIn.p-2
+							figure.m-0
+								a(href="#").d-block.box_img_product
+									img(src="img/product/" + item.image , alt="")
+								.infomation_more
+									include ../../hover/hover-1/index.pug
+								figcaption
+									p=item.name
+									strong=item.price

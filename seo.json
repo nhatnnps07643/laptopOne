@@ -1,0 +1,24 @@
+{
+  "SEO": {
+    "AppName": "Home",
+    "mobile_color": "#000000",
+    "cfg_name": "Laptop One",
+    "cfg_url": "LaptopOne.com",
+    "analytics": "UA-XXXXXXXXXXX-1",
+    "seo_lang": "en",
+    "seo_geo": "EN",
+    "seo_geo_latitude": "36.204824",
+    "seo_geo_longitude": "138.252924",
+    "app_facebook_ID": "",
+    "cfg_description": "",
+    "cfg_keywords": "",
+    "cfg_author": "",
+    "cfg_sitenameurl": "",
+    "app_facebook_adminsID": "",
+    "app_appleID": "",
+    "cfg_sitenameurlgoogle": "",
+    "verf_google": "",
+    "verf_bing": "",
+    "verf_yandex": ""
+  }
+}

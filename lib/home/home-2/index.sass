@@ -1,0 +1,40 @@
+@import ../../_includes
+
+// CSS HOME CONTACT
+.home_contact
+	background: $_bg
+	.box_user_contact
+		background: $_bg_main
+		padding: 1rem 3rem
+		display: flex
+		justify-content: space-around
+		align-items: center
+	.text_contact_user
+		position: relative
+		p
+			padding: .2rem 0rem
+			margin: 0
+			font-size: 1.2rem
+			font-weight: 300
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			top: 50%
+			left: 110%
+			width: 40px
+			height: 40px
+			background: url('../img/svg/mail.svg')
+			background-size: cover
+			transform: translateY(-50%) 
+	.form_group_contact
+		display: flex
+		input
+			border: none
+			padding: .4rem 1rem
+			min-width: 400px
+		button
+			border: none
+			background: $_button
+			padding: .4rem 1rem
+

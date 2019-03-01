@@ -1,0 +1,18 @@
+@import ../../_includes
+
+.sub_menu
+	display: none
+	position: absolute
+	top: 0
+	left: 100%
+	background: white
+	padding: .5rem 1rem
+	border: 1px solid rgba(black, .3)
+	min-width: 300px
+	.sub_menu_child
+		flex: 0 0 50%
+		p
+			margin-left: 1.5rem
+	&:hover .sub_menu
+		display: flex
+		flex-wrap: wrap

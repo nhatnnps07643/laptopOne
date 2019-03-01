@@ -1,0 +1,39 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+@font-face
+	font-family: 'Cuprum'
+	src: url(../fonts/Cuprum-Regular.ttf)
+
+html, body
+	font-family: 'Roboto', sans-serif
+	font-size: 14px
+	height: 100%
+	width: 100%
+
+.hover
+	transition: all .2s ease-in-out
+	&:hover
+		transform: translateY(-4px)
+
+ul 
+	list-style: none
+	padding-left: 0
+a
+	&:hover
+		text-decoration: none
+
+// CSS LOGO
+a.navbar-brand
+	color: black
+	font-weight: 700
+	color: #4f8fff
+	font-size: 1.5rem
+	span
+		font-size: 2rem
+		background: -webkit-linear-gradient(30deg, #60f272, #0845f0)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+	

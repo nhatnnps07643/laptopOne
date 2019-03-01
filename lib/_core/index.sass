@@ -1,0 +1,52 @@
+@import ../_includes
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700i,800i,900i')
+// +font-face('CenturyGothic', "../fonts/", "CenturyGothic")
+
+//CSS tab hidden 
+[data-tab="hidden"]
+	display: none
+.bg_title
+	background: lighten($_title_bg,30%)
+	border-top: 2px solid $_button
+	span.title_home
+		padding: .5rem 2rem
+		background: $_title_bg
+		text-transform: uppercase
+		position: relative
+		display: inline-block
+		height: 30px
+		&::after
+			content: ''
+			display: block
+			height: 0
+			width: 0
+			border-top: 15px solid transparent
+			border-bottom: 15px solid transparent
+			border-left: 10px solid $_title_bg
+			position: absolute
+			left: 100%
+			top: 0
+	.tab_product
+		ul
+			display: flex
+			margin-bottom: 0
+			li
+				transition: .2s ease-in-out
+				cursor: pointer
+				padding: .5rem 1.5rem
+				&:hover,
+				&.active
+					background: lighten($_button,40%)
+					transform: translateY(-4px)
+					box-shadow: 0px 3px 10px -30px rgba($_button, .4)
+				
+main
+	background: $_bg
+ol, ul
+	margin: 0
+
+.btn_hover
+	transition: .2s ease-in-out
+	&:hover
+		transform: translateY(-3px)
+		box-shadow: 2px 2px 10px rgba(darken($_button,30%),.4)

@@ -1,0 +1,74 @@
+
+//- HTML modal cart
+-
+	var products = [
+	{
+		name: 'Asus gaming 424UY Chip i5 ram 4G HDD 320G',
+		price: '7,000,000 vnđ',
+		image: 'pro1.png',
+	},
+	{
+		name: 'Dell 577485 424UY Chip i5 ram 4G HDD 320G',
+		price: '12,899,000 vnđ',
+		image: 'pro2.png',
+	},
+	{
+		name: 'HP Supper',
+		price: '25,899,000 vnđ',
+		image: 'pro3.png',
+	},
+	{
+		name: 'HP Supper4 24UY Chip i5 ram 4G HDD 320G',
+		price: '25,899,000 vnđ',
+		image: 'pro3.png',
+	},]
+.modal_cart.mt-5.pt-5
+	.table_left
+		table
+			tr
+				th Sản phẩm
+				th Giá
+				th Số lượng
+				th Tổng cộng
+			each item in products
+				tr.items
+					td.img_box
+						img(src='img/product/'+ item.image, alt="")
+						span=item.name
+					td.price
+						span=item.price
+					td 
+						form(action="")
+							//- Hidden id và cấc thuộc tính muổn ẩn
+							.group_hidden 
+								input(type="hidden")
+							.group_number
+								i.fa.fa-minus.btn_prev.btn_hover
+								input#number_product(type="number" value=1)
+								i.fa.fa-plus.btn_next.btn_hover
+					td
+						span 123,000,000 vnđ
+	.table_right
+		p.title Hóa Đơn
+		table
+			tr
+				td 
+					p Tổng số tiền
+				td 
+					span 123,000,000 vnđ
+			tr
+				td 
+					p Thuế 10%
+				td 
+					span 250,000 vnđ
+			tr
+				td 
+					p Tiền vận chuyển
+				td 
+					span 23,000 vnđ
+			tr
+				td 
+					h6 Thành tiền
+				td 
+					span.total 223,000,000 vnđ
+

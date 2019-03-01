@@ -1,0 +1,110 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-footer-11
+	+pad(2rem null)
+	position: relative
+	z-index: 1
+	color: $_black
+	overflow: hidden
+	+media-breakpoint-down(xs)
+	h4
+		text-transform: uppercase
+		color: 
+		background: lightblue
+		position: relative
+		+fz(1rem)
+		padding: .5rem 1rem
+		margin-bottom: 1.5rem
+
+	.linkfooter
+		padding: 0 0 2rem
+		.list-group
+			display: flex
+			flex-wrap: wrap
+			flex-direction: row
+			.list-group-item
+				flex: 0 0 33%
+				+bg(none, none, none)
+				border: 0
+				+pad(.5rem 1rem)
+				+media-breakpoint-up(md)
+					+pad(.15rem 0)
+				a
+					color: $_black !important
+					text-transform: capitalize
+					font-size: .9rem
+					+fw(500)
+					+link(darken(color-get($mau,trang),0%),color-get($mau,extra),color-get($mau,extra))
+		.location
+			p 
+				+mar(0)
+				padding: .5rem 0
+				text-transform: uppercase
+				+fz(.9rem)
+				+fw(500)
+				line-height: 2rem
+				color: $_black
+			.email
+				text-decoration: underline
+				color: $_black
+
+		.socials
+			p
+				+fz(.85rem)
+				color: $_black
+			.input-group
+				
+				+pad(0 0 .7rem 0)
+				border-bottom: 1px solid color-get($mau,trang)
+				.form-control
+					+pad(0)
+					border: 0
+					color: $_black
+					background: none
+					// outline: none
+					&::placeholder
+						color: $_black
+						text-transform: uppercase
+						+fz(.9rem)
+						+fw(500)
+					&:focus
+						box-shadow: none
+				.emailbtn
+					+pad(0)
+					background: none
+					border: 0
+			.social-list
+				+media-breakpoint-down(sm)
+					+mar(2rem null null null)
+				.list-inline
+					+mar(0)
+					.list-inline-item
+						+fz(.9rem)
+						+link(darken(color-get($mau,trang), 85%), color-get($mau,trang), color-get($mau,trang))
+						// +mar(null 1rem null null)
+						a
+							display: block
+							+bg(none)
+							+border-radius(3px)
+							text-align: center
+							color: white
+							width: 25px
+							height: 25px
+							text-align: center
+							background: $_button
+							i
+								+lh(23px)
+								&::after
+									+lh(25px)
+						&:last-child
+							+mar(0)
+	.copyright
+		background-color: none
+		p
+			+pad(1rem 0 0)
+			border-top: 1px solid darken(color-get($mau,trang),20%)
+			// text-transform: uppercase
+			+fz(.85rem)

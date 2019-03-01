@@ -1,0 +1,151 @@
+<!-- ////////////// HEADER ////////////// -->
+//- {'Asus gaming 424UY':'7,000,000 vnđ', 'Dell 577485':'12,899,000 vnđ', 'HP Supper':'25,000,000 vnđ', 'MSI noteBook U87263': '24,244,000 vnđ'}
+-
+	var products = [
+	{
+		name: 'Asus gaming 424UY Chip i5 ram 4G HDD 320G',
+		price: '7,000,000 vnđ',
+		image: 'pro1.png',
+	},
+	{
+		name: 'Dell 577485',
+		price: '12,899,000 vnđ',
+		image: 'pro2.png',
+	},
+	{
+		name: 'HP Supper',
+		price: '25,899,000 vnđ',
+		image: 'pro3.png',
+	},
+	{
+		name: 'MSI noteBook U87263',
+		price: '32,899,000 vnđ',
+		image: 'pro7.png',
+	},
+	{
+		name: 'HP Supper',
+		price: '25,899,000 vnđ',
+		image: 'pro3.png',
+	},
+	{
+		name: 'HP Supper',
+		price: '25,899,000 vnđ',
+		image: 'pro3.png',
+	},]
+
+
+section.home_new.mt-3
+	.container
+		.row
+			.col-12
+				.bg_title.d-flex
+					span.title_home Sản phẩm mới
+					.mr-auto
+					.tab_product#tab_01
+						ul
+							li.item_tab.active(data-action='tab' data-target='#tab-demo1')
+								span Dell
+							li.item_tab(data-action='tab' data-target='#tab-demo2')
+								span Asus
+							li.item_tab(data-action='tab' data-target='#tab-demo1')
+								span MSI
+			.col-12
+				.product-list
+					.row.no-gutters
+						.col-md-12.col-lg-12
+							#tab-demo1(data-tab='acive' data-action='tab')
+								.owl-carousel.owl-theme.owl-loading.product_list_show
+									each item in products
+										.item.animated.bounceIn
+											figure.m-0
+												a(href="#").d-block.box_img_product
+													img(src="img/product/" + item.image , alt="")
+												.infomation_more
+													include ../../hover/hover-1/index.pug
+												figcaption
+													p.mb-1=item.name
+													strong=item.price
+
+							#tab-demo2(data-action='tab' data-tab='hidden')
+								.owl-carousel.owl-theme.owl-loading.product_list_show
+									each item in products
+										.item.animated.bounceIn
+											figure.m-0
+												a(href="#").d-block.box_img_product
+													img(src="img/product/" + item.image , alt="")
+												.infomation_more
+													include ../../hover/hover-1/index.pug
+												figcaption
+													p.mb-1=item.name
+													strong=item.price
+						//- .col-md-4.col-lg-2
+						//- 	figure.left_banner_product.m-0
+						//- 		.box_img_product
+						//- 			img(src="img/product/product1.jpg", alt="")
+
+	.container.mt-5
+		.row
+			.col-12
+				.bg_title.d-flex
+					span.title_home Sản bán chạy
+					.mr-auto
+					.tab_product#tab_01
+						ul
+							li.item_tab.active(data-action='tab' data-target='#tab-dell')
+								span Dell
+							li.item_tab(data-action='tab' data-target='#tab-MSI')
+								span Asus
+							li.item_tab(data-action='tab' data-target='#tab-MSI')
+								span MSI
+			.col-12
+				.product-list
+					.row.no-gutters
+						.col-md-12
+							#tab-dell(data-child='#tab_01' data-action='tab')
+								.owl-carousel.owl-theme.owl-loading.product_list_show
+									each item in products
+										.item.animated.bounceIn
+											figure.m-0
+												a(href="#").d-block.box_img_product
+													img(src="img/product/" + item.image , alt="")
+												.infomation_more
+													include ../../hover/hover-1/index.pug
+												figcaption
+													p.mb-1=item.name
+													strong=item.price
+											
+
+										
+							#tab-MSI(data-child='#tab_01' data-tab='hidden')
+								.owl-carousel.owl-theme.owl-loading.product_list_show
+									each item in products
+										.item.animated.bounceIn
+											figure.m-0
+												a(href="#").d-block.box_img_product
+													img(src="img/product/" + item.image , alt="")
+												figcaption
+													p.mb-1=item.name
+													strong=item.price
+						
+
+	.container.mt-5
+		.row
+			.col-12
+				.bg_title.d-flex
+					span.title_home Sản phẩm nổi bật
+			.col-12
+				.row.no-gutters.product-list.home_product_list
+					each item in products
+						.col-md-3
+							.item.animated.bounceIn.p-2
+								figure.m-0
+									a(href="#").d-block.box_img_product
+										img(src="img/product/" + item.image , alt="")
+									.infomation_more
+										include ../../hover/hover-1/index.pug
+									figcaption
+										p=item.name
+										strong=item.price
+
+
+
