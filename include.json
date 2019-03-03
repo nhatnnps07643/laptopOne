@@ -20,15 +20,6 @@
                 "footer/f-11"
             ]
         },
-        "about": {
-            "body": [
-                "boxes/b-1",
-                "icon/icon_menu",
-                "boxes/b-12",
-                "boxes/b-14",
-                "boxes/b-17"
-            ]
-        },
         "detail": {
             "body": [
                 "breadcrumb/breadcrumb-1",
@@ -56,6 +47,16 @@
         "register": {
             "body": [
                 "register/register-1"
+            ]
+        },
+        "about": {
+            "body": [
+                "about/about-1",
+                "boxes/b-1",
+                "icon/icon_menu",
+                "boxes/b-12",
+                "boxes/b-14",
+                "boxes/b-17"
             ]
         }
     }

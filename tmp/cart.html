@@ -263,7 +263,7 @@ Facebook: https://fb.com/canhcam.vn
           <div class="container">
             <div class="row no-gutters">
               <div class="col-12">
-                <div class="action_cart" id="tab_01"><span class="active item_tab" data-action="tab" data-target="#tab-cart">GIỎ HÀNG</span><i class="fa fa-angle-right"></i><span class="item_tab" data-action="tab" data-target="#tab-pay">THANH TOÁN</span><i class="fa fa-angle-right"></i><span class="item_tab" data-action="tab" data-target="#tab-success">HOÀN TẤT</span></div>
+                <div class="action_cart" id="tab_01"><span class="active item_tab" id="tab01_cart" data-action="tab" data-target="#tab-cart">GIỎ HÀNG</span><i class="fa fa-angle-right"></i><span class="item_tab" id="tab02_cart" data-action="tab" data-target="#tab-pay">THANH TOÁN</span><i class="fa fa-angle-right"></i><span class="item_tab" id="tab03_cart" data-action="tab" data-target="#tab-success">HOÀN TẤT</span></div>
               </div>
               <div class="col-md-12">
                 <div id="tab-cart" data-action="tab" data-tab="acive">
@@ -367,213 +367,78 @@ Facebook: https://fb.com/canhcam.vn
                         </tr>
                       </table>
                     </div>
+                    <div class="container">
+                      <div class="row justify-content-end">
+                        <div class="col-md-3 mt-5">
+                          <button class="mt-2 btn bg-success hover btn_more bg-success btn_back" type="button" data-model-target="#tab02_cart">Tiến hàng thanh toán</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div id="tab-pay" data-action="tab" data-tab="hidden">
-                  <div class="modal_cart mt-5 pt-5">
-                    <div class="table_left">
-                      <table>
-                        <tr>
-                          <th>Sản phẩm</th>
-                          <th>Giá</th>
-                          <th>Số lượng</th>
-                          <th>Tổng cộng</th>
-                        </tr>
-                        <tr class="items">
-                          <td class="img_box"><img src="img/product/pro1.png" alt=""><span>Asus gaming 424UY Chip i5 ram 4G HDD 320G</span></td>
-                          <td class="price"><span>7,000,000 vnđ</span></td>
-                          <td> 
-                            <form action="">
-                              <div class="group_hidden"> 
-                                <input type="hidden">
-                              </div>
-                              <div class="group_number"><i class="fa fa-minus btn_prev btn_hover"></i>
-                                <input id="number_product" type="number" value="1"><i class="fa fa-plus btn_next btn_hover"></i>
-                              </div>
-                            </form>
-                          </td>
-                          <td><span>123,000,000 vnđ</span></td>
-                        </tr>
-                        <tr class="items">
-                          <td class="img_box"><img src="img/product/pro2.png" alt=""><span>Dell 577485 424UY Chip i5 ram 4G HDD 320G</span></td>
-                          <td class="price"><span>12,899,000 vnđ</span></td>
-                          <td> 
-                            <form action="">
-                              <div class="group_hidden"> 
-                                <input type="hidden">
-                              </div>
-                              <div class="group_number"><i class="fa fa-minus btn_prev btn_hover"></i>
-                                <input id="number_product" type="number" value="1"><i class="fa fa-plus btn_next btn_hover"></i>
-                              </div>
-                            </form>
-                          </td>
-                          <td><span>123,000,000 vnđ</span></td>
-                        </tr>
-                        <tr class="items">
-                          <td class="img_box"><img src="img/product/pro3.png" alt=""><span>HP Supper</span></td>
-                          <td class="price"><span>25,899,000 vnđ</span></td>
-                          <td> 
-                            <form action="">
-                              <div class="group_hidden"> 
-                                <input type="hidden">
-                              </div>
-                              <div class="group_number"><i class="fa fa-minus btn_prev btn_hover"></i>
-                                <input id="number_product" type="number" value="1"><i class="fa fa-plus btn_next btn_hover"></i>
-                              </div>
-                            </form>
-                          </td>
-                          <td><span>123,000,000 vnđ</span></td>
-                        </tr>
-                        <tr class="items">
-                          <td class="img_box"><img src="img/product/pro3.png" alt=""><span>HP Supper4 24UY Chip i5 ram 4G HDD 320G</span></td>
-                          <td class="price"><span>25,899,000 vnđ</span></td>
-                          <td> 
-                            <form action="">
-                              <div class="group_hidden"> 
-                                <input type="hidden">
-                              </div>
-                              <div class="group_number"><i class="fa fa-minus btn_prev btn_hover"></i>
-                                <input id="number_product" type="number" value="1"><i class="fa fa-plus btn_next btn_hover"></i>
-                              </div>
-                            </form>
-                          </td>
-                          <td><span>123,000,000 vnđ</span></td>
-                        </tr>
-                      </table>
+                  <section class="modal-04">
+                    <div class="container mt-5">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h4 class="title">Địa chỉ ban đầu</h4>
+                            <div class="group_local">
+                              <input id="default" type="radio" name="local">
+                              <label for="default">Sử dụng địa chỉ khi đăng ký</label>
+                              <p>Địa chỉ đăng ký ban đầu: <i>109/15 đường Hiệp Bình, Hiệp Bình Phước, Quận Thủ Đức</i></p>
+                              <p>Số điện thoại đăng ký ban đầu: <i>0966643251</i></p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <h4 class="title">Địa chỉ giao hàng mới</h4>
+                            <div class="group_local">
+                              <input id="new" type="radio" name="local">
+                              <label for="new">Sử dụng địa chỉ mới</label>
+                            </div>
+                            <div class="group_local_new">
+                              <select id="city" name="">
+                                <option value="0">Thành phố / Tỉnh</option>
+                                <option value="1">Thành 1</option>
+                                <option value="2">Thành 2</option>
+                                <option value="3">Thành 3</option>
+                                <option value="4">Thành 4</option>
+                              </select>
+                              <select id="district" name="">
+                                <option value="0">Quận / Huyện</option>
+                              </select>
+                            </div>
+                            <div class="group_more">
+                              <input class="mt-3" id="street" placeholder="Số nhà và tên đường">
+                              <input class="mt-3 w-100" id="number" placeholder="Số điện thoại"><br>
+                              <textarea class="mt-3" id="more" name="" cols="30" rows="5" placeholder="Note về việc giao hàng"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <button class="mt-2 hover btn_more bg-info btn_back" type="button" data-model-target="#tab01_cart">Quay lại</button>
+                          </div>
+                          <div class="col-md-6">
+                            <button class="mt-2 hover btn_more bg-success btn_back" type="button" data-model-target="#tab03_cart">Tiến hàng thanh toán</button>
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                    <div class="table_right">
-                      <p class="title">Hóa Đơn</p>
-                      <table>
-                        <tr>
-                          <td> 
-                            <p>Tổng số tiền</p>
-                          </td>
-                          <td> <span>123,000,000 vnđ</span></td>
-                        </tr>
-                        <tr>
-                          <td> 
-                            <p>Thuế 10%</p>
-                          </td>
-                          <td> <span>250,000 vnđ</span></td>
-                        </tr>
-                        <tr>
-                          <td> 
-                            <p>Tiền vận chuyển</p>
-                          </td>
-                          <td> <span>23,000 vnđ</span></td>
-                        </tr>
-                        <tr>
-                          <td> 
-                            <h6>Thành tiền</h6>
-                          </td>
-                          <td> <span class="total">223,000,000 vnđ</span></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
+                  </section>
                 </div>
                 <div id="tab-success" data-action="tab" data-tab="hidden">
-                  <div class="modal_cart mt-5 pt-5">
-                    <div class="table_left">
-                      <table>
-                        <tr>
-                          <th>Sản phẩm</th>
-                          <th>Giá</th>
-                          <th>Số lượng</th>
-                          <th>Tổng cộng</th>
-                        </tr>
-                        <tr class="items">
-                          <td class="img_box"><img src="img/product/pro1.png" alt=""><span>Asus gaming 424UY Chip i5 ram 4G HDD 320G</span></td>
-                          <td class="price"><span>7,000,000 vnđ</span></td>
-                          <td> 
-                            <form action="">
-                              <div class="group_hidden"> 
-                                <input type="hidden">
-                              </div>
-                              <div class="group_number"><i class="fa fa-minus btn_prev btn_hover"></i>
-                                <input id="number_product" type="number" value="1"><i class="fa fa-plus btn_next btn_hover"></i>
-                              </div>
-                            </form>
-                          </td>
-                          <td><span>123,000,000 vnđ</span></td>
-                        </tr>
-                        <tr class="items">
-                          <td class="img_box"><img src="img/product/pro2.png" alt=""><span>Dell 577485 424UY Chip i5 ram 4G HDD 320G</span></td>
-                          <td class="price"><span>12,899,000 vnđ</span></td>
-                          <td> 
-                            <form action="">
-                              <div class="group_hidden"> 
-                                <input type="hidden">
-                              </div>
-                              <div class="group_number"><i class="fa fa-minus btn_prev btn_hover"></i>
-                                <input id="number_product" type="number" value="1"><i class="fa fa-plus btn_next btn_hover"></i>
-                              </div>
-                            </form>
-                          </td>
-                          <td><span>123,000,000 vnđ</span></td>
-                        </tr>
-                        <tr class="items">
-                          <td class="img_box"><img src="img/product/pro3.png" alt=""><span>HP Supper</span></td>
-                          <td class="price"><span>25,899,000 vnđ</span></td>
-                          <td> 
-                            <form action="">
-                              <div class="group_hidden"> 
-                                <input type="hidden">
-                              </div>
-                              <div class="group_number"><i class="fa fa-minus btn_prev btn_hover"></i>
-                                <input id="number_product" type="number" value="1"><i class="fa fa-plus btn_next btn_hover"></i>
-                              </div>
-                            </form>
-                          </td>
-                          <td><span>123,000,000 vnđ</span></td>
-                        </tr>
-                        <tr class="items">
-                          <td class="img_box"><img src="img/product/pro3.png" alt=""><span>HP Supper4 24UY Chip i5 ram 4G HDD 320G</span></td>
-                          <td class="price"><span>25,899,000 vnđ</span></td>
-                          <td> 
-                            <form action="">
-                              <div class="group_hidden"> 
-                                <input type="hidden">
-                              </div>
-                              <div class="group_number"><i class="fa fa-minus btn_prev btn_hover"></i>
-                                <input id="number_product" type="number" value="1"><i class="fa fa-plus btn_next btn_hover"></i>
-                              </div>
-                            </form>
-                          </td>
-                          <td><span>123,000,000 vnđ</span></td>
-                        </tr>
-                      </table>
+                  <section class="modal-05">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="d-flex justify-content-center mt-5 flex-column custom_success"><img class="mb-5" src="img/svg/checked.svg" alt="">
+                            <h2 class="text-align-center text-success">Bạn đã mua hàng thành công !</h2>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="table_right">
-                      <p class="title">Hóa Đơn</p>
-                      <table>
-                        <tr>
-                          <td> 
-                            <p>Tổng số tiền</p>
-                          </td>
-                          <td> <span>123,000,000 vnđ</span></td>
-                        </tr>
-                        <tr>
-                          <td> 
-                            <p>Thuế 10%</p>
-                          </td>
-                          <td> <span>250,000 vnđ</span></td>
-                        </tr>
-                        <tr>
-                          <td> 
-                            <p>Tiền vận chuyển</p>
-                          </td>
-                          <td> <span>23,000 vnđ</span></td>
-                        </tr>
-                        <tr>
-                          <td> 
-                            <h6>Thành tiền</h6>
-                          </td>
-                          <td> <span class="total">223,000,000 vnđ</span></td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
+                  </section>
                 </div>
               </div>
             </div>

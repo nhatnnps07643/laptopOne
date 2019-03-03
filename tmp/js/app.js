@@ -791,42 +791,7 @@ $(function () {
 
 $(window).resize(function () {});
 
-$(document).ready(function () {});
-
-$(window).resize(function () {});
-
-$(document).ready(function () {
-
-	$(".canhcam-boxes-12 .gallery-lists").lightGallery({
-		youtubePlayerParams: {
-			modestbranding: 1,
-			showinfo: 0,
-			rel: 0,
-			controls: 0
-		},
-		width: '700px',
-		height: '470px',
-		mode: 'lg-fade',
-		counter: false,
-		share: false,
-		zoom: false,
-		fullscreen: false,
-		download: false,
-		startClass: '',
-		enableSwipe: false,
-		enableDrag: false,
-		speed: 500,
-		loadYoutubeThumbnail: true,
-		youtubeThumbSize: 'default',
-		thumbnail: true,
-		animateThumb: false,
-		showThumbByDefault: false,
-		selector: '.item'
-	});
-});
-
-$(document).ready(function () {});
-
+// JS about 
 function CCFooter11() {};
 
 $(function () {
@@ -904,6 +869,12 @@ $("[data-action='tab']").on('click', function () {
 	// Set hidden và active cho TAB 
 	$(Tab_current).attr('data-tab', 'hidden');
 	$(target).attr('data-tab', 'true');
+});
+
+// JS modal -4
+$('.btn_back').click(function () {
+	var id = $(this).attr('data-model-target');
+	$(id).click();
 });
 
 // JS login checkbox

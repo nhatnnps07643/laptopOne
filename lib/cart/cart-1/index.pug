@@ -5,11 +5,11 @@ section.cart-01.mt-2
 		.row.no-gutters
 			.col-12
 				.action_cart#tab_01
-					span.active.item_tab(data-action='tab' data-target='#tab-cart') GIỎ HÀNG
+					span.active.item_tab#tab01_cart(data-action='tab' data-target='#tab-cart') GIỎ HÀNG
 					i.fa.fa-angle-right
-					span.item_tab(data-action='tab' data-target='#tab-pay') THANH TOÁN
+					span.item_tab#tab02_cart(data-action='tab' data-target='#tab-pay') THANH TOÁN
 					i.fa.fa-angle-right
-					span.item_tab(data-action='tab' data-target='#tab-success') HOÀN TẤT
+					span.item_tab#tab03_cart(data-action='tab' data-target='#tab-success') HOÀN TẤT
 			.col-md-12
 				#tab-cart(data-action='tab' data-tab='acive' )
 					include ../../modal/modal-3/index.pug

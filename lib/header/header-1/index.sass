@@ -9,6 +9,15 @@
 		display: flex
 		justify-content: center
 		align-items: center
+		font-weight: 700
+		color: #4f8fff
+		font-size: 1.4rem
+		span
+			font-size: 2rem
+			background: -webkit-linear-gradient(30deg, #60f272, #0845f0)
+			background: -webkit-linear-gradient(30deg, #60f272, #0845f0)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
 	form
 		.group_input_custom
 			position: relative
@@ -62,6 +71,7 @@
 					box-shadow: 2px 5px 15px rgba($_main, 0.4)
 				span.text_cart
 					color: black
+					
 				span.icon_cart
 					i
 						transform: translateY(-2px)
@@ -78,6 +88,9 @@
 						transition: all .2s ease-in-out
 				&.text_cart
 					background: darken($_main2,10%)
+					white-space: nowrap
+					padding: .35rem .3rem
+					
 
 
 // CSS menu trên header
@@ -139,7 +152,8 @@
 						p
 							margin-left: 1.5rem
 				&:hover
-					background: mediumspringgreen
+					background: #33f6ab6b
+					border: none
 					.sub_menu
 						display: flex
 						flex-wrap: wrap
